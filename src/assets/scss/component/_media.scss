@@ -1,0 +1,51 @@
+@charset "UTF-8";
+/*
+  media
+  説明：
+ */
+
+
+
+/* ベース */
+.media{
+  display: flex;
+  align-items: center;
+
+  &__date{
+    margin:0 10px 0 0;
+    @include font-size(14);
+    color:#999;
+  }
+  &__category{
+    margin:0 10px 0 0;
+    padding:2px 16px;
+    @include font-size(12);
+    font-weight: bold;
+    color:#333;
+    border:1px solid $key-color;
+    border-radius: 2px;
+  }
+  &__title{
+    @include font-size(14);
+    transition: .3s;
+    &:hover{
+      color:$key-color;
+    }
+  }  
+  //レイアウト調整用ブロック
+  &__block{
+
+  }
+}
+
+
+/* バリエーション */
+.media-type--horizontal{
+  display: flex;
+  .media__image{
+    padding:0 10px 0 0;
+  }
+}
+
+.media-type--vertical{}
+

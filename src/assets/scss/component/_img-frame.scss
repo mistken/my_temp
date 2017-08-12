@@ -1,0 +1,47 @@
+@charset "UTF-8";
+/*
+  img-frame
+  説明：
+ */
+
+.img-frame{
+  width:100%;
+  padding:20px;
+
+  &__title{
+    margin:0 0 16px;
+    @include font-size(16);
+    line-height: 160%;
+    font-weight:bold;
+    text-align: center;
+  }
+
+  &__img{
+
+    img{
+      max-width: 100%;
+    }
+  }
+  @include media(tab) {
+      &__img--lp{
+    padding:0 0 0 16px;
+    }
+    &__img--rp{
+      padding:0 16px 0 0;
+    }
+  }
+
+  &__cap{
+    margin:10px 0 0 0;
+    padding:0;
+    @include font-size(14);
+    line-height: 160%;
+    color:#666;
+  }
+
+}
+
+.img-frame--nopadding{
+  width:100%;
+  padding:0;
+}

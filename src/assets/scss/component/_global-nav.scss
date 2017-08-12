@@ -1,0 +1,152 @@
+@charset "UTF-8";
+/*
+  global-nav
+  説明：
+ */
+
+.global-nav {
+  background-color: #fff;
+}
+.global-nav-list{
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+
+@include media(tab) {
+  .global-nav-list{
+    display:flex;
+    .global-nav-item{
+      margin:0;
+      padding:0 26px 0 0;
+    }
+    .global-nav-item a{
+      display:block;
+      padding:14px 0;
+      @include font-size(14);
+      color:#000;
+      font-weight:bold;
+      text-decoration:none;
+      transition: .3s;
+
+      [class^="icon-"] {
+        margin:0 5px 0 0;
+      }
+      &:hover{
+        color:$key-color;
+      }
+    }
+  }
+}
+
+@include media(sp) {
+  .global-nav {
+    position: absolute;
+    left:0;
+    height: calc( 100vh - 65px );
+    width: 100%;
+    z-index: 10;
+    transform: translateX(-100%);
+    transition: .3s;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    border-top: 1px solid #ccc;
+    &.open{
+      transform: translateX(0);
+    }
+  }
+    
+  .global-nav-list{
+    padding:10px 0;
+
+    .global-nav-item{
+      margin:0;
+      padding:0;
+      border-bottom: 1px solid #efefef;
+    }
+    .global-nav-item a{
+      display:block;
+      padding:20px;
+      @include font-size(14);
+      color:#000;
+      font-weight:bold;
+      text-decoration:none;
+      [class^="icon-"] {
+        margin:0 5px 0 0;
+      }
+    }
+  }
+
+}
+
+
+/* スマホ スライドメニューボタン */
+.sp-slidemenu-btn {
+  display: inline-block;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  @include media(tab) {
+    display: none;
+  }
+}
+
+.slidemenu-btn {
+  display: inline-block;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  z-index: 100;
+  cursor: pointer;
+  
+  &:hover {}
+  .close {
+    background: transparent;
+
+    &:before,
+    &:after {
+      margin-top: 0;
+    }
+    &:before {
+      transform: rotate(-45deg);
+    }
+    &:after {
+      transform: rotate(-135deg);
+    }
+  }
+}
+
+.slidemenu-btn-icon {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 2px;
+  margin: -1px 0 0 -7px;
+  background: #000;
+  transition: .2s;
+
+  &:before,
+  &:after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 20px;
+    height: 2px;
+    background: #000;
+    transition: .3s;
+  }
+
+  &:before {
+    margin-top: -8px;
+  }
+  &:after {
+    margin-top: 6px;
+  }
+}
+
+

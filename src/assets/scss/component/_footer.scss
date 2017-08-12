@@ -1,0 +1,65 @@
+@charset "UTF-8";
+/*
+  footer
+  説明：大枠レイアウト用
+ */
+
+.footer{
+  &__block{
+    background:$key-color;
+  }
+  &__inner{
+    max-width:1000px;
+    padding:0 12px;
+    margin:0 auto;
+  }
+
+  &__logo{
+    display:inline-block;
+    margin:0 0 10px;
+    padding:0 0 5px;
+    @include font-size(18);
+    border-bottom: 2px solid #fff;
+  }
+}
+
+
+.footer__content{
+  @include media(tab) {
+    width:500px;
+    margin-left: auto;
+  }
+  @include media(sp) {
+
+  }
+
+  padding:30px 0;
+  color:#fff;
+
+  .tell,
+  .mail{
+    display:inline-block;
+    margin:0 10px 0 0;
+    @include font-size(16);
+    span{
+      margin:0 5px 0 0;
+      @include font-size(14);
+      vertical-align: text-top;
+    }
+  }
+  .text{
+    margin:10px 0 0;
+    padding:0;
+    @include font-size(12);
+    line-height: 140%;
+  }
+}
+
+
+/* copyright ----- */
+.copyright{
+  padding:10px 0;
+  color:$key-color;
+  @include font-size(13);
+  text-align:center;
+}

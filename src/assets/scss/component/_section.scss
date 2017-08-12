@@ -1,0 +1,38 @@
+@charset "UTF-8";
+/*
+  section
+  説明：大枠レイアウト用
+ */
+
+
+
+/* ベース */
+.section{
+  margin:0 0 80px;
+
+  @include media(sp) {
+    margin:0 0 40px;
+  }
+
+  &__block{
+    max-width:720px;
+    margin:0 auto;
+    padding:0 10px;
+
+    @include media(sp) {
+      padding: 0 14px;
+    }
+
+    &--through{
+      width:100%;
+      margin:0 auto;
+      padding:0;
+    }
+    &--short{
+       width:728px;
+    }
+  }
+
+}
+
+

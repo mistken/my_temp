@@ -1,0 +1,94 @@
+@charset "UTF-8";
+/*
+  archive-hero
+  説明：写真バックで大きい方のアーカイブヘッダー
+ */
+
+/* ベース */
+.hero{
+  position: relative;
+  color:#fff;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__block{
+    position: relative;
+    max-width:800px;
+    min-height: 200px;
+    margin: 0 auto;
+    padding:0 12px;
+    display: flex;
+    @include media(tab) {
+      align-items: center;
+    }
+    @include media(sp) {
+      justify-content: center;
+    }
+    z-index: 2;
+  }
+  &__cover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(26,117,204,.6);
+    z-index: 1;
+  }
+}
+
+.hero--index{
+  a{
+    display:block;
+    width:100%;
+    span{
+      display:none;
+    }
+  }
+
+  @include media(tab) {
+    margin:0 0 60px;
+    min-height: 400px;
+    background-image:url(../img/bg-hero-index.jpg);
+    background-position: center center;
+    a{
+      min-height: 400px;
+    }
+  }
+  @include media(sp) {
+    margin:0 0 30px;
+    min-height: 250px;
+    background-image:url(../img/bg-hero-index.jpg);
+    background-position: center bottom;
+    a{
+      min-height: 250px;
+    }
+  }
+}
+
+.hero--about{
+  margin:0 0 40px;
+
+  @include media(tab) {
+    background-image:url(../img/bg-hero-about.jpg);
+    background-position: center bottom;
+  }
+  @include media(sp) {
+    background-image:url(../img/bg-hero-about-sp.jpg);
+    background-position: center bottom;
+  }
+}
+
+.hero--profile{
+  margin:0 0 40px;
+
+  @include media(tab) {
+    background-image:url(../img/bg-hero-about.jpg);
+    background-position: center bottom;
+  }
+  @include media(sp) {
+    background-image:url(../img/bg-hero-about-sp.jpg);
+    background-position: center bottom;
+  }
+}
+

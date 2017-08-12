@@ -1,0 +1,31 @@
+@charset "UTF-8";
+/*
+  text
+  説明：
+ */
+
+
+/* ベース */
+.text{
+  margin:0;
+
+  @include media(tab) {
+    padding:0 0 40px;
+    @include font-size(16);
+    line-height: 200%;
+    text-align: justify;
+  }
+  @include media(sp) {
+    padding:0 0 20px;
+    @include font-size(15);
+    line-height: 190%;
+    text-align: justify;
+  }
+
+  &__block{}
+}
+
+
+.text--short{
+  padding:0 0 14px;
+}

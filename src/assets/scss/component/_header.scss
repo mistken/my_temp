@@ -1,0 +1,72 @@
+@charset "UTF-8";
+/*
+  header
+  説明：
+ */
+
+.header{
+  &__block{
+    @include media(tab) {
+      border-bottom: 1px solid #ccc;
+    }
+  }
+  &__inner{
+    max-width:1000px;
+    padding:0 12px;
+    margin:0 auto;
+  }
+}
+
+@include media(sp) {
+  .header{
+    height:65px;
+  }
+  .header-sp--fixed{
+    position: fixed;
+    width:100%;
+    background-color: #fff;
+    z-index: 100;
+    border-bottom: 1px solid #ccc;
+  }
+}
+
+/* ロゴ */
+.logo{
+  @include media(tab) {
+    margin:0 0 30px;
+    padding:0;
+    @include font-size(26);
+  }
+  @include media(sp) {
+    margin:0;
+    padding:14px 0;
+    @include font-size(16);
+  }
+
+  a{ color:$key-color; }
+}
+
+.br-sp{
+  @include media(tab) {
+    display: none;
+  }
+}
+
+/* 文字サイズ */
+.change-font-size{
+  display:flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding:10px 0 5px;
+
+  @include media(sp) {
+    display:none;
+  }
+
+  .text{
+    margin:0 5px 0 0;
+    padding:0;
+    @include font-size(12);
+  }
+}
+

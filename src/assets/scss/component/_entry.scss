@@ -1,0 +1,20 @@
+@charset "UTF-8";
+/*
+  entry-list
+  説明：
+ */
+
+
+/* ベース */
+.entry-list{
+  display: flex;
+  flex-wrap:wrap;
+  margin:0 0 20px;
+
+
+  .entry-item{
+    width: 100%;
+    padding:16px 0;
+    border-bottom:1px solid #efefef;
+  }
+}
