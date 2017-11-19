@@ -10,9 +10,9 @@
   margin:0;
 
   @include media(tab) {
-    padding:0 0 40px;
+    @include padding(0,0,40,0);
     @include font-size(16);
-    line-height: 200%;
+    line-height: 1.4;
     text-align: justify;
   }
   @include media(sp) {
