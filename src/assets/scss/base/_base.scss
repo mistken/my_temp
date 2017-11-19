@@ -3,16 +3,15 @@
   base
  */
 
-@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400');
-
-$key-color:#0b60b1;
-
-
 /*
 
 baseには共通設定を
 
 */
+html{
+  font-size:100%;
+}
+
 body{
   font-family: 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
   color: #000;
@@ -30,6 +29,9 @@ a{
 *:after {
   box-sizing: border-box;
 }
+
+//color
+$key-color:#0b60b1;
 
 // テキスト　色
 .col-key{ color:$key-color; }
