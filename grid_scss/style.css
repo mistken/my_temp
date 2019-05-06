@@ -1,0 +1,223 @@
+@charset "UTF-8";
+/*
+  grid
+  説明：グリッド
+ */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.row .col {
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+@media only screen and (min-width: 641px) {
+  .row > .col.l1 {
+    width: 8.33%;
+  }
+  .row > .col.l2 {
+    width: 16.66%;
+  }
+  .row > .col.l3 {
+    width: 25%;
+  }
+  .row > .col.l4 {
+    width: 33.33%;
+  }
+  .row > .col.l5 {
+    width: 41.66%;
+  }
+  .row > .col.l6 {
+    width: 50%;
+  }
+  .row > .col.l7 {
+    width: 58.33%;
+  }
+  .row > .col.l8 {
+    width: 66.66%;
+  }
+  .row > .col.l9 {
+    width: 75%;
+  }
+  .row > .col.l10 {
+    width: 83.33%;
+  }
+  .row > .col.l11 {
+    width: 91.66%;
+  }
+  .row > .col.l12 {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 641px) {
+  .row > .col.s1 {
+    width: 8.33%;
+  }
+  .row > .col.s2 {
+    width: 16.66%;
+  }
+  .row > .col.s3 {
+    width: 25%;
+  }
+  .row > .col.s4 {
+    width: 33.33%;
+  }
+  .row > .col.s5 {
+    width: 41.66%;
+  }
+  .row > .col.s6 {
+    width: 50%;
+  }
+  .row > .col.s7 {
+    width: 58.33%;
+  }
+  .row > .col.s8 {
+    width: 66.66%;
+  }
+  .row > .col.s9 {
+    width: 75%;
+  }
+  .row > .col.s10 {
+    width: 83.33%;
+  }
+  .row > .col.s11 {
+    width: 91.66%;
+  }
+  .row > .col.s12 {
+    width: 100%;
+  }
+}
+
+.row {
+  display: -webkit-flex;
+  -webkit-flex-wrap: wrap;
+}
+
+/*
+ 12分割以外
+ 均等分割
+ 対象は子要素のdiv,a
+ */
+.sep-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+@media only screen and (min-width: 641px) {
+  .sep-row > .col.l1 {
+    width: 100%;
+  }
+  .sep-row > .col.l2 {
+    width: 50%;
+  }
+  .sep-row > .col.l3 {
+    width: 33.333%;
+  }
+  .sep-row > .col.l4 {
+    width: 25%;
+  }
+  .sep-row > .col.l5 {
+    width: 20%;
+  }
+  .sep-row > .col.l8 {
+    width: 12.5%;
+  }
+}
+
+@media only screen and (max-width: 641px) {
+  .sep-row > .col.s1 {
+    width: 100%;
+  }
+  .sep-row > .col.s2 {
+    width: 50%;
+  }
+  .sep-row > .col.s3 {
+    width: 33.333%;
+  }
+}
+
+.col {
+  display: flex;
+}
+
+.col .figure {
+  padding: 0;
+}
+
+.col:first-child {
+  background-color: teal;
+  margin-top: 0;
+}
+
+.col:last-child {
+  background-color: lightgreen;
+  margin-bottom: 0;
+}
+
+.is-between {
+  justify-content: space-between;
+}
+
+.is-between .col:first-child {
+  margin-right: auto;
+}
+
+@media only screen and (max-width: 641px) {
+  .is-sp-between {
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (max-width: 641px) {
+  .is-sp-reverse {
+    flex-flow: column-reverse;
+  }
+}
+
+.is-gap-1 > .col,
+.is-gap-1 > .col {
+  padding: 16px;
+}
+
+@media only screen and (max-width: 641px) {
+  .is-gap-1 > .col,
+  .is-gap-1 > .col {
+    padding: 8px;
+  }
+}
+
+.is-gap-1 .is-inline {
+  margin: 16px;
+}
+
+@media only screen and (max-width: 641px) {
+  .is-gap-1 .is-inline {
+    margin: 8px;
+  }
+}
+
+.is-gap-2 > .col,
+.is-gap-2 > .col {
+  padding: 10px;
+}
+
+@media only screen and (max-width: 641px) {
+  .is-gap-2 > .col,
+  .is-gap-2 > .col {
+    padding: 10px;
+  }
+}
+
+.is-gap-3 > .col,
+.is-gap-3 > .col {
+  padding: 5px;
+}
+
+.is-gap-3 .is-inline {
+  margin: 5px;
+}
