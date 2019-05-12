@@ -1,0 +1,75 @@
+@charset "UTF-8";
+/*
+  layout
+  説明：レイアウト
+ */
+
+// layout
+.container {
+  margin: 0 0 40px;
+}
+.layout {
+  &.is-type1,
+  &.is-type2 {
+    @include media(tab) {
+      .img {
+        width: 28%;
+      }
+      .block {
+        width: 69%;
+      }
+    }
+  }
+  &.is-type1 {
+    .img {
+      @include media(tab) {
+        float: left;
+        margin: 0 3% 0 0;
+      }
+      @include media(sp) {
+        margin: 4% 0 0 0;
+      }
+    }
+    .block {
+      @include media(tab) {
+        float: right;
+      }
+    }
+  }
+  &.is-type2 {
+    .img {
+      @include media(tab) {
+        float: right;
+        margin: 0 0 0 3%;
+      }
+      @include media(sp) {
+        margin: 0 0 4% 0;
+      }
+    }
+    .block {
+      @include media(tab) {
+        float: left;
+      }
+      @include media(sp) {
+        & + .img {
+          margin: 4% 0 0 0;
+        }
+      }
+    }
+  }
+
+  &.is-type3 {
+    .img {
+      margin: 0 0 20px;
+      text-align: center;
+    }
+  }
+  &.is-type4 {
+    .img {
+      text-align: center;
+    }
+    .p2 {
+      margin: 0 0 20px;
+    }
+  }
+}

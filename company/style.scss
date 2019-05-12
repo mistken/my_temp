@@ -1,0 +1,161 @@
+@charset "UTF-8";
+
+// normarize
+// @import "node_modules/normalize.css/normalize.css";
+
+// mixins
+@import "_mixins.scss";
+
+// grid
+@import "_grid.scss";
+
+// layout
+@import "_layout.scss";
+
+// ワンライナー
+
+// company-head
+.company-head {
+  margin: 20px 0 0 0;
+  .ttl-group {
+    display: flex;
+    align-items: center;
+    margin: 0 0 30px;
+  }
+}
+
+// company-body
+.company-body {
+  .ttl-page {
+    margin: 0 0 30px;
+    position: relative;
+    padding-left: 0.8em;
+    @include font-size(22);
+    line-height: 100%;
+    border-left: 5px solid #064a7f;
+  }
+}
+
+//企業ロゴ、企業名
+.company-logo {
+  margin: 0 10px 0 0;
+}
+.company-name {
+  @include font-size(28);
+}
+
+//タイトル
+.ttl {
+  margin-bottom: 0.5em;
+  &.is-pri {
+    @include font-size(26);
+    line-height: 1.4;
+    font-weight: bold;
+    color: #e35e1d;
+    @include media(sp) {
+      @include font-size(22);
+      line-height: 1.6;
+    }
+  }
+  &.is-sec {
+    padding: 0 0 0 0.5em;
+    @include font-size(22);
+    line-height: 1.4;
+    font-weight: bold;
+    color: #000;
+    border-left: 4px solid #064a7f;
+    overflow: hidden;
+    @include media(sp) {
+      @include font-size(20);
+      line-height: 1.4;
+    }
+  }
+}
+.ttl-has-bg {
+  margin-bottom: 1.1em;
+  padding: 10px 20px;
+  @include font-size(22);
+  color: #333;
+  background: #dcf1f7;
+  border-radius: 10px 10px 0 0;
+}
+
+// タブナビ
+.tab_btns_list {
+  position: relative;
+  top: 2px;
+  z-index: 1;
+  margin: 0 0 30px;
+}
+.tab_btns_list:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  border-bottom: 2px solid #c9c9c9;
+  z-index: 1;
+}
+.tab_btns_list li {
+  font-weight: bold;
+  text-align: center;
+  border-color: #c9c9c9;
+  border-width: 2px 1px 2px;
+  border-style: solid;
+  background-color: #dcf1f7;
+  border-radius: 1rem 1rem 0 0;
+  color: #064a7f;
+  padding: 1em 0;
+}
+.tab_btns_list li:first-child {
+  border-left-width: 2px;
+}
+.tab_btns_list li:last-child {
+  border-right-width: 2px;
+}
+.tab_btns_list li.kai {
+  position: relative;
+  background-color: #fff;
+  border-bottom: 2px solid #fff;
+  color: #000;
+  z-index: 2;
+}
+.tab_btns_list li.kai:after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 100%;
+  left: 0;
+  bottom: -3px;
+  height: 4px;
+  background-color: #fff;
+}
+@include media(sp) {
+  .tab_btns_list li {
+    line-height: 1.2;
+    font-size: 3vw;
+  }
+}
+
+.card {
+  &__img {
+    margin: 0 0 2%;
+  }
+  &__ttl {
+    @include font-size(20);
+  }
+  &__txt {
+    @include font-size(16);
+  }
+}
+
+//slick
+#slider {
+}
+.slide-item {
+}
+#thumb-list {
+  margin: 0 auto;
+}
+.thumbnail-item {
+}
