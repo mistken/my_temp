@@ -13,10 +13,10 @@
   &.is-type2 {
     @include media(tab) {
       .img {
-        width: 28%;
+        width: 48%;
       }
       .block {
-        width: 69%;
+        width: 49%;
       }
     }
   }

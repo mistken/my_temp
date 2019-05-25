@@ -9,9 +9,9 @@
   flex-wrap: wrap;
   justify-content: flex-start;
 
-.col {
-  box-sizing: border-box;
-}
+  .col {
+    box-sizing: border-box;
+  }
 
   @include media(tab) {
     & > .col.l1 {
@@ -124,6 +124,9 @@
     }
     & > .col.l8 {
       width: 12.5%;
+    }
+    & > .col.l10 {
+      width: 10%;
     }
   }
   @include media(sp) {
