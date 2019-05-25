@@ -172,6 +172,12 @@
   }
 }
 
+@media only screen and (min-width: 767px) {
+  .is-pc-reverse {
+    flex-flow: row-reverse nowrap;
+  }
+}
+
 @media only screen and (max-width: 767px) {
   .is-sp-reverse {
     flex-flow: column-reverse;
@@ -450,6 +456,10 @@
   font-size: 1.6rem;
 }
 
+#slider {
+  height: 100%;
+}
+
 #thumb-list {
   margin: 0 auto;
 }
@@ -473,7 +483,7 @@
 }
 
 .thumb__item {
-  margin: 0 10px 0 0;
+  margin: 0 10px 10px 0;
 }
 
 .thumb__item .img-holder {
@@ -489,4 +499,9 @@
 
 .thumb__item.thumb--current .img-holder {
   border: 2px solid #e35e1d;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  height: 100%;
 }

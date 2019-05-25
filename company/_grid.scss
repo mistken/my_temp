@@ -177,6 +177,11 @@
     justify-content: space-between;
   }
 }
+.is-pc-reverse {
+  @include media(tab) {
+    flex-flow: row-reverse nowrap;
+  }
+}
 .is-sp-reverse {
   @include media(sp) {
     flex-flow: column-reverse;

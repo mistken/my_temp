@@ -151,6 +151,7 @@
 
 //slick
 #slider {
+  height: 100%;
 }
 .slide-item {
 }
@@ -176,8 +177,9 @@
     vertical-align: bottom;
   }
 }
+
 .thumb__item {
-  margin: 0 10px 0 0;
+  margin: 0 10px 10px 0;
   .img-holder {
     border: 2px solid #efefef;
     width: 80px;
@@ -192,4 +194,11 @@
       border: 2px solid #e35e1d;
     }
   }
+}
+
+// slick
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  // display: flex;
+  height: 100%;
 }
