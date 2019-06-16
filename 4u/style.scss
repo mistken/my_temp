@@ -35486,5 +35486,21 @@ li.dotte {
       color: #666;
     }
   }
+}
 
+// top 塾
+.sellJyuku{
+ .btn-wrapp{
+	&.is-center{
+		text-align:center;
+	}
+	.btn{
+		display: inline-block;
+    border: 1px solid #555;
+		padding: .75em 1em;
+		margin: 0 .25em;
+		font-size: 1.6rem;
+    line-height: 1.6;
+	 }
+ }
 }
