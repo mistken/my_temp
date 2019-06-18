@@ -1,6 +1,7 @@
 
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 
+
 html {
 	font-family: sans-serif;
 	-ms-text-size-adjust: 100%;
@@ -23230,7 +23231,6 @@ input[type="radio"].def+label {
 }
 input[type="radio"].def+label:before {
 	display: block;
-	vertical-align: middle;
 	content: '';
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -23815,9 +23815,7 @@ body {
 		// max-width: 594px;
 		padding-top: 24px
 	}
-	.hMainNav {
-		// float: right
-	}
+	
 	.hMainNavItem {
 		position: relative;
 		float: left;
@@ -33356,7 +33354,9 @@ h2.ebook_ttl_sp img {
 	background-color:#f9f9f9;
 	text-decoration:underline;
 }
-.btnItems_s{}
+.btnItems_s{
+	
+}
 .btnItems_s li{
 	display:  inline-block;
     border:  1px solid #555;
@@ -35259,6 +35259,7 @@ li.dotte {
     width : 204px;
 	height: 18px;
 }
+
 .pulldown-floating-menu .floating_border{
 	border: 4px solid;
 	width: 222px;
@@ -35488,7 +35489,7 @@ li.dotte {
   }
 }
 
-// top 塾
+// top 不動産売却塾
 .sellJyuku{
  .btn-wrapp{
 	&.is-center{
