@@ -23299,8 +23299,7 @@ input[type="checkbox"].def+label {
 }
 input[type="checkbox"].def+label:before {
 	display: block;
-	vertical-align: middle;
-	content: '';
+	content: ' ';
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-ms-box-sizing: border-box;
@@ -23823,6 +23822,7 @@ body {
 		font-size: 1.6rem;
 		font-weight: bold
 	}
+
 	.hMainNavItem a {
 		position: relative;
 		display: block;
@@ -26917,7 +26917,7 @@ dt.asideBoxLnk {
 	display: block;
 	width: 88px;
 	height: 88px;
-	vertical-align: bottom
+	vertical-align: bottom;
 }
 .detailPager .detailPagerPrev .ptmb:after, .detailPager .detailPagerNext .ptmb:after {
 	content: " ";
@@ -33354,9 +33354,6 @@ h2.ebook_ttl_sp img {
 	background-color:#f9f9f9;
 	text-decoration:underline;
 }
-.btnItems_s{
-	
-}
 .btnItems_s li{
 	display:  inline-block;
     border:  1px solid #555;
@@ -33882,8 +33879,6 @@ li.here {
 }
 .searchBtn input[type="button"]:hover {
 	cursor:pointer;
-}
-.searchBtn {
 }
 #erMessage{
 	font-size:14px;
@@ -35468,7 +35463,6 @@ li.dotte {
   &__txt{
     font-size: 1.6rem;
   }
-  &__sub{}
   &__date{
     display:inline-block;
     font-size: 0.8em;
@@ -35498,7 +35492,7 @@ li.dotte {
 	.btn{
 		display: inline-block;
     border: 1px solid #555;
-		padding: .75em 1em;
+		padding: .75em 2.5em;
 		margin: 0 .25em;
 		font-size: 1.6rem;
     line-height: 1.6;
